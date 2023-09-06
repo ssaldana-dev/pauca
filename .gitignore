@@ -1,0 +1,4 @@
+#Ignora todas las imágenes JPG WEBP y PNG.
+.jpg
+.webp
+.png
