@@ -1,6 +1,6 @@
 :root {
     --font-color: #FFF;
-    --disabled-font-color: #ababab;
+    --selectioned-font-color: #eb7402;
 }
 * {
     box-sizing: border-box;
@@ -9,19 +9,24 @@
 }
 html {
     font-size: 62.5%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Century Gothic';
 }
 
 header {
     display: flex;
     width: 100%;
-    height: 150px;
+    height: 160px;
     color: var(--font-color);
     background-color: #000;
 }
 header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 25%;
-    background-color: rgba(136, 136, 136, 0.384);
+}
+header .logo img {
+    width: 230px;
 }
 header nav {
     width: 60%;
@@ -36,7 +41,7 @@ header nav ul {
 }
 header nav ul li {
     margin-bottom: 50px;
-    font-size: 1.8rem;
+    font-size: 1.25rem;
     color: var(--font-color);
 }
 header nav ul li a {
@@ -45,11 +50,18 @@ header nav ul li a {
 }
 header nav ul li a:hover {
     transition: 250ms;
-    color: var(--font-color);
+    color: var(--selectioned-font-color);
 }
 header .flag {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
     width: 14%;
-    background-color: rgba(136, 136, 136, 0.384);
+}
+header .flag img {
+    margin-top: 30px;
+    margin-right: 45px;
+    width: 50px;
 }
 
 #banner {
@@ -57,21 +69,20 @@ header .flag {
     align-items: center;
     justify-content: center;
     height: 500px;
-    background-color: #ababab;
+    background-image: url(./assets/banner.webp);
+    background-position: center;
+    background-size: cover;
 }
 #banner article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 160px;
-    width: 120px;
+    height: 180px;
+    width: 140px;
 }
 #banner article img {
-    width: 100px;
-    height: 100px;
-    border: #FFF 1px solid;
-    border-radius: 100%;
-    background-color: #555555;
+    width: 120px;
+    height: 120px;
 }
 #banner article p {
     margin-top: 10px;
@@ -94,11 +105,11 @@ header .flag {
 }
 #who-we-are .description h2 {
     margin: 0px 0px 50px 40px;
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
 #who-we-are .description p {
     margin: 30px 0px 0px 40px;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
 }
 #who-we-are .photos {
     display: flex;
@@ -108,12 +119,13 @@ header .flag {
     width: 39%;
 }
 #who-we-are .photos article {
-    height: 180px;
     width: 140px;
+    height: 230px;
+
 }
 #who-we-are .photos article img {
-    width: 140px;
-    height: 160px;
+    width: 135px;
+    height: 165px;
     background-color: #555555;
 }
 #who-we-are .photos article p {
@@ -121,4 +133,271 @@ header .flag {
 }
 #who-we-are .photos article span {
     font-size: 1rem;
+}
+
+#services {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 650px;
+    background-image: url(./assets/services-banner.webp);
+    background-position: center;
+    background-size: cover;
+}
+#services > h2 {
+    position: absolute;
+    top: 90px;
+    left: 65px;
+    z-index: 1;
+    color: var(--font-color);
+    font-size: 3.8rem;
+}
+#services > span {
+    position: absolute;
+    top: 32px;
+    left: 16px;
+    font-size: 12.3rem;
+    font-weight: bold;
+    -webkit-text-stroke: 1px var(--font-color);
+    color: transparent;
+}
+#services > article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 260px;
+    background-color: #000000E0;
+}
+#services > article > ul > li {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--font-color);
+}
+
+#work-methodology {
+    position: relative;
+    display: flex;
+    height: 255px;
+}
+.work-methodology_title {
+    display: flex;
+    align-items: center;
+    width: 310px;
+    background-color: #303030;
+    color: var(--font-color);
+}
+.work-methodology_title h2 {
+    margin-left: 30px;
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: 11px;
+}
+.work-methodology_title figure {
+    position: absolute;
+    top: 175px;
+    left: 30px;
+    height: 74px;
+    width: 1px;
+    background-color: #FFF;
+}
+.work-methodology_diagram {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.work-methodology_diagram > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 125px;
+}
+.work-methodology_diagram > article > img {
+    margin-bottom: 10px;
+    width: 115px;
+}
+.work-methodology_diagram > article > p {
+    font-size: 1.12rem;
+    font-weight: bold;
+    text-align: center;
+    color: #303030;
+}
+.work-methodology_diagram figure {
+    margin-bottom: 30px;
+    width: 60px;
+    height: 0px;
+    border: dashed #303030 1px;
+}
+#work-methodology .no-background-color {
+    border: none;
+}
+
+#print-section {
+    position: relative;
+    height: 980px;
+}
+#print-section h2 {
+    margin-left: 40px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    font-size: 3rem;
+    font-weight: normal;
+    letter-spacing: 11px;
+}
+.print-section_imgs {
+    position: absolute;
+}
+.print-section_imgs > img {
+    width: 520px;
+    height: 520px;
+}
+.print-section_img-1 {
+    position: absolute;
+    left: 15px;
+}
+.print-section_img-2 {
+    position: absolute;
+    top: 175px;
+    left: 435px;
+}
+.print-section_figure-1 {
+    position: absolute;
+    top: 100px;
+    left: -30px;
+    width: 300px;
+    height: 2px;
+    background-color: #000;
+    transform: rotate(-45deg);
+}
+.print-section_figure-2 {
+    position: absolute;
+    top: 590px;
+    left: 705px;
+    width: 300px;
+    height: 2px;
+    background-color: #000;
+    transform: rotate(-45deg);
+}
+.print-section_lists > ul > li {
+    font-size: 1.8rem;
+}
+.print-section_lists_list-1 {
+    position: absolute;
+    top: 118px;
+    left: 650px;
+}
+.print-section_lists_list-2 {
+    position: absolute;
+    top: 118px;
+    left: 960px;
+}
+.print-section_lists_figure-1 {
+    position: absolute;
+    top: 132px;
+    left: 600px;
+    width: 2px;
+    height: 80px;
+    background-color: #000;
+}
+.print-section_lists_figure-2 {
+    position: absolute;
+    top: 132px;
+    left: 915px;
+    width: 2px;
+    height: 100px;
+    background-color: #000;
+}
+
+#maketing-and-design {
+    position: relative;
+    height: 800px;
+}
+#maketing-and-design h2 {
+    margin-left: 40px;
+    font-size: 3rem;
+    font-weight: normal;
+    letter-spacing: 11px;
+}
+.maketing-and-design_imgs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 75px;
+}
+.maketing-and-design_imgs img {
+    width: 390px;
+    height: 390px;
+}
+.maketing-and-design_imgs_banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    height: 390px;
+    border: solid #303030 5px;
+    border-radius: 50%;
+}
+.maketing-and-design_imgs_banner h3 {
+    text-align: center;
+    font-size: 2.3rem;
+    color: #666666;
+    letter-spacing: 10px;
+    line-height: 30px;
+}
+.maketing-and-design_lists {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.maketing-and-design_lists ul {
+    margin-left: 155px;
+    margin-right: 155px;
+}
+.maketing-and-design_lists ul li {
+    font-size: 1.8rem;
+}
+
+#graphic-interior-design {
+    position: relative;
+    height: 650px;
+}
+#graphic-interior-design h2 {
+    margin-left: 75px;
+    margin-bottom: 70px;
+    font-size: 2.8rem;
+    letter-spacing: 11px;
+    color: #303030;
+}
+#graphic-interior-design h3 {
+    margin-left: 75px;
+    margin-bottom: 60px;
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 11px;
+    color: #303030;
+}
+#graphic-interior-design p {
+    margin-left: 75px;
+    width: 700px;
+    font-size: 2rem;
+}
+#graphic-interior-design article {
+    position: absolute;
+    top: 0px;
+    right: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+#graphic-interior-design article .circle-banner {
+    width: 240px;
+    height: 240px;
+}
+#graphic-interior-design article .rectangle-banner {
+    position: absolute;
+    top: 330px;
+    left: 290px;
+    width: 675px;
+    height: 200px;
 }
