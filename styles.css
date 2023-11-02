@@ -401,3 +401,55 @@ header .flag img {
     width: 675px;
     height: 200px;
 }
+
+#digital-area {
+    height: 800px;
+}
+.digital-area_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.digital-area_title > figure {
+    margin-right: 15px;
+    width: 1000px;
+    height: 1px;
+    background-color: #303030;
+}
+.digital-area_title h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    letter-spacing: 1.5rem;
+    color: #303030;
+}
+.digital-area_banner {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: left 0% bottom 22%;
+}
+.digital-area_icons {
+    position: relative;
+    top: -80px;
+    display: flex;
+    justify-content: space-around;
+}
+.digital-area_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+}
+.digital-area_icon > img {
+    margin-bottom: 45px;
+    width: 95px;
+    height: 80px;
+}
+.digital-area_icon > span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #303030;
+}
