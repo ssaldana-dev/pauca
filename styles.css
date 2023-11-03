@@ -397,19 +397,19 @@ header .flag img {
 #graphic-interior-design article .rectangle-banner {
     position: absolute;
     top: 330px;
-    left: 290px;
+    right: 60px;
     width: 675px;
     height: 200px;
 }
 
 #digital-area {
-    height: 800px;
+    height: 860px;
 }
 .digital-area_title {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 .digital-area_title > figure {
     margin-right: 15px;
@@ -452,4 +452,162 @@ header .flag img {
     letter-spacing: 4px;
     text-align: center;
     color: #303030;
+}
+
+#success-stories {
+    height: 100%;
+    padding-bottom: 90px;
+}
+#success-stories h2 {
+    margin-left: 70px;
+    margin-bottom: 50px;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #222221;
+}
+.success-stories_photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.success-stories_photos_photo {
+    margin: 10px;
+    width: 125px;
+    height: 210px;
+    background-color: #303030;
+}
+
+#clients h2 {
+    margin-left: 70px;
+    margin-bottom: 60px;
+    font-size: 4rem;
+    font-weight: 500;
+    color: #222221;
+}
+#clients img {
+    margin-bottom: 85px;
+    width: 100%;
+}
+
+#contact h2 {
+    margin-left: 70px;
+    margin-bottom: 60px;
+    font-size: 4rem;
+    color: #222221;
+}
+.contact_message h3 {
+    margin-top: 60px;
+    margin-left: 110px;
+    margin-bottom: 65px;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 75px;
+}
+.contact_main {
+    display: flex;
+    color: #222221;
+}
+.contact_message {
+    width: 37.5vw;
+}
+.contact_message b {
+    margin-left: 25px;
+    font-weight: 500;
+    font-size: 8.5rem;
+}
+.contact_message p {
+    margin-left: 110px;
+    margin-bottom: 45px;
+    font-size: 2.2rem;
+    text-align: justify;
+}
+.contact_message_social-media {
+    display: flex;
+    margin-left: 105px;
+}
+.contact_message_social-media a {
+    display: block;
+    margin: 0px 5px 0px 5px;
+    width: 45px;
+    height: 45px;
+}
+.contact_message_social-media a img {
+    width: 45px;
+}
+
+.contact_form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 75px;
+    width: 62.5vw;
+}
+.contact_form > article {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 0px 20px;
+    width: 37.5%;
+}
+.contact_form > article > label {
+    font-size: 2.5rem;
+}
+.contact_form > article > input {
+    border: none;
+    border-bottom: #222221 1px solid;
+    font-size: 2.5rem;
+    outline: none;
+}
+.contact_form .contact_form_message {
+    width: calc(77% + 20px);
+}
+.contact_form > button {
+    position: absolute;
+    bottom: 40px;
+    right: 10%;
+    width: 200px;
+    height: 60px;
+    border-radius: 0;
+    border: #222221 1px solid;
+    background-color: transparent;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.contact_form > button:hover {
+    transition: 300ms;
+    background-color: #303030;
+    color: #ffffff;
+}
+.contact_leyend {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.contact_leyend > p {
+    display: flex;
+    align-items: center;
+    margin-right: 7%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #303030;
+}
+.contact_leyend > p > img {
+    width: 37px;
+}
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 275px;
+}
+.footer_locations {
+    margin-top: 100px;
+    font-size: 3rem;
+}
+.footer_rights {
+    position: absolute;
+    bottom: 60px;
+    right: 20px;
 }
