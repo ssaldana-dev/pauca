@@ -5,11 +5,12 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;;
+    padding: 0;
 }
 html {
     font-size: 62.5%;
     font-family: 'Century Gothic';
+    scroll-behavior: smooth;
 }
 
 header {
@@ -471,7 +472,7 @@ header .flag img {
     justify-content: center;
     align-items: center;
 }
-.success-stories_photos_photo {
+.success-stories_photos img {
     margin: 10px;
     width: 125px;
     height: 210px;
@@ -610,4 +611,11 @@ footer {
     position: absolute;
     bottom: 60px;
     right: 20px;
+}
+.footer_privacy {
+    position: absolute;
+    bottom: 45px;
+    right: 20px;
+    color: #222221;
+    text-decoration: none;
 }
