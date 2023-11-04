@@ -13,18 +13,21 @@
                     <img src="./assets/logo-pauca.png" alt="Paúca logo" />
                 </a>
             </article>
-            <nav>
+            <nav id="navigation-menu">
                 <ul>
-                    <li><a href="#who-we-are">¿Quienes somos?</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#success-stories">Casos de Éxito</a></li>
-                    <li><a href="#clients">Clientes</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+                    <li><a class="navigation-menu_anchor" href="#who-we-are">¿Quienes somos?</a></li>
+                    <li><a class="navigation-menu_anchor" href="#services">Servicios</a></li>
+                    <li><a class="navigation-menu_anchor" href="#success-stories">Casos de Éxito</a></li>
+                    <li><a class="navigation-menu_anchor" href="#clients">Clientes</a></li>
+                    <li><a class="navigation-menu_anchor" href="#contact">Contacto</a></li>
                 </ul>
             </nav>
             <article class="flag">
                 <img src="./assets/flag.png" alt="" />
             </article>
+            <div class="responsive-menu">
+                <figure class="responsive-menu_bars"></figure>
+            </div>
         </header>
         <main>
             <section id="banner">
@@ -133,42 +136,44 @@
                     <figure></figure>
                 </article>
                 <article class="work-methodology_diagram">
-                    <article>
-                        <img src="./assets/procesos-1.png" alt="Process icon" />
-                        <p>Brief</p>
-                        <p>Reunión con el Cliente</p>
-                    </article>
-                    <figure></figure>
-                    <article>
-                        <img src="./assets/procesos-2.png" alt="Process icon" />
-                        <p>Estrategia</p>
-                        <p>Mercadológica</p>
-                    </article>
-                    <figure class="no-background-color"></figure>
-
-                    <article>
-                        <img src="./assets/procesos-3.png" alt="Process icon" />
-                        <p>Planeación</p>
-                        <p>Gráfica</p>
-                    </article>
-                    <figure></figure>
-                    <article>
-                        <img src="./assets/procesos-4.png" alt="Process icon" />
-                        <p>Revisión</p>
-                        <p>con el Cliente</p>
-                    </article>
-                    <figure></figure>
-                    <article>
-                        <img src="./assets/procesos-5.png" alt="Process icon" />
-                        <p>Ajustes de</p>
-                        <p>Planning</p>
-                    </article>
-                    <figure></figure>
-                    <article>
-                        <img src="./assets/procesos-6.png" alt="Process icon" />
-                        <p>Publicación y/o</p>
-                        <p>Impresión</p>
-                    </article>
+                    <div class="work-methodology_diagram_section-1">
+                        <article>
+                            <img src="./assets/procesos-1.png" alt="Process icon" />
+                            <p>Brief</p>
+                            <p>Reunión con el Cliente</p>
+                        </article>
+                        <figure></figure>
+                        <article>
+                            <img src="./assets/procesos-2.png" alt="Process icon" />
+                            <p>Estrategia</p>
+                            <p>Mercadológica</p>
+                        </article>
+                    </div>
+                    <div class="work-methodology_diagram_section-2">
+                        <article>
+                            <img src="./assets/procesos-3.png" alt="Process icon" />
+                            <p>Planeación</p>
+                            <p>Gráfica</p>
+                        </article>
+                        <figure></figure>
+                        <article>
+                            <img src="./assets/procesos-4.png" alt="Process icon" />
+                            <p>Revisión</p>
+                            <p>con el Cliente</p>
+                        </article>
+                        <figure></figure>
+                        <article>
+                            <img src="./assets/procesos-5.png" alt="Process icon" />
+                            <p>Ajustes de</p>
+                            <p>Planning</p>
+                        </article>
+                        <figure></figure>
+                        <article>
+                            <img src="./assets/procesos-6.png" alt="Process icon" />
+                            <p>Publicación y/o</p>
+                            <p>Impresión</p>
+                        </article>
+                    </div>
                 </article>
             </section>
             <section id="print-section">
@@ -392,19 +397,19 @@
                             a la brevedad.
                         </p>
                         <article class="contact_message_social-media">
-                            <a href="">
+                            <a href="https://www.facebook.com/search/top?q=pa%C3%BAca%20publicidad">
                                 <img
                                     src="./assets/facebook-icon-black.png"
                                     alt="Facebook icon"
                                 />
                             </a>
-                            <a href="">
+                            <a href="https://www.instagram.com/paucastudiopublicidad/">
                                 <img
                                     src="./assets/instagram-icon-black.png"
                                     alt="Instagram icon"
                                 />
                             </a>
-                            <a href="">
+                            <a href="https://wa.me/+525620531223?text=Hola%20estoy%20interesado%20en:%20">
                                 <img
                                     src="./assets/whatsapp-icon-black.png"
                                     alt="Whatsapp icon"
@@ -463,5 +468,6 @@
                 >Aviso de privacidad - Términos y condiciones</a
             >
         </footer>
+        <script src="./code.js"></script>
     </body>
 </html>

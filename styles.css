@@ -204,21 +204,33 @@ header .flag img {
 }
 .work-methodology_diagram {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 }
-.work-methodology_diagram > article {
+.work-methodology_diagram_section-1 {
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.work-methodology_diagram_section-2 {
+    width: 68%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.work-methodology_diagram > div > article {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 125px;
 }
-.work-methodology_diagram > article > img {
+.work-methodology_diagram > div > article > img {
     margin-bottom: 10px;
     width: 115px;
 }
-.work-methodology_diagram > article > p {
+.work-methodology_diagram > div > article > p {
     font-size: 1.12rem;
     font-weight: bold;
     text-align: center;
@@ -229,9 +241,6 @@ header .flag img {
     width: 60px;
     height: 0px;
     border: dashed #303030 1px;
-}
-#work-methodology .no-background-color {
-    border: none;
 }
 
 #print-section {
@@ -379,17 +388,17 @@ header .flag img {
 }
 #graphic-interior-design p {
     margin-left: 75px;
-    width: 700px;
+    width: 43.75vw;
     font-size: 2rem;
 }
 #graphic-interior-design article {
     position: absolute;
     top: 0px;
-    right: 50px;
+    right: 0px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 1000px;
+    width: 62.5vw;;
 }
 #graphic-interior-design article .circle-banner {
     width: 240px;
@@ -497,6 +506,10 @@ header .flag img {
     font-size: 4rem;
     color: #222221;
 }
+.contact_main {
+    display: flex;
+    color: #222221;
+}
 .contact_message h3 {
     margin-top: 60px;
     margin-left: 110px;
@@ -505,17 +518,13 @@ header .flag img {
     font-weight: 500;
     line-height: 75px;
 }
-.contact_main {
-    display: flex;
-    color: #222221;
-}
-.contact_message {
-    width: 37.5vw;
-}
-.contact_message b {
+.contact_message h3 b {
     margin-left: 25px;
     font-weight: 500;
     font-size: 8.5rem;
+}
+.contact_message {
+    width: 37.5vw;
 }
 .contact_message p {
     margin-left: 110px;
@@ -618,4 +627,252 @@ footer {
     right: 20px;
     color: #222221;
     text-decoration: none;
+}
+
+@media (max-width:1440px) {
+    .work-methodology_diagram div article {
+        height: 150px;
+        width: 85px;
+    }
+    .work-methodology_diagram div article img {
+        width: 80px;
+    }
+
+    .maketing-and-design_imgs img {
+        width: 340px;
+        height: 340px;
+    }
+    .maketing-and-design_imgs_banner h3 {
+        font-size: 2rem;
+    }
+    .maketing-and-design_imgs_banner {
+        width: 340px;
+        height: 340px;
+    }
+
+    #graphic-interior-design article {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 62.5vw;
+    }
+    #graphic-interior-design article .circle-banner {
+        width: 220px;
+        height: 220px;
+    }
+    #graphic-interior-design article .rectangle-banner {
+        position: absolute;
+        top: 330px;
+        right: 30px;
+        width: 540px;
+        height: 160px;
+    }
+}
+
+@media (max-width:1024px) {
+    .work-methodology_diagram {
+        flex-direction: column;
+    }
+    .work-methodology_diagram_section-1 {
+        width: 42%;
+    }
+    .work-methodology_diagram_section-2 {
+        width: 100%;
+    }
+    .work-methodology_diagram > div > article {
+        height: 127.5px;
+    }
+
+    #print-section {
+        height: 900px;
+    }
+    .print-section_lists_list-1 {
+        left: 450px;
+    }
+    .print-section_lists_list-2 {
+        left: 750px;
+    }
+    .print-section_lists_figure-1 {
+        left: 400px;
+    }
+    .print-section_lists_figure-2 {
+        left: 700px;
+    }
+
+    #maketing-and-design {
+        height: 715px;
+    }
+    .maketing-and-design_imgs img {
+        width: 290px;
+        height: 290px;
+    }
+    .maketing-and-design_imgs_banner h3 {
+        font-size: 1.8rem;
+        letter-spacing: 8px;
+    }
+    .maketing-and-design_imgs_banner {
+        width: 290px;
+        height: 290px;
+    }
+    .maketing-and-design_lists ul {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    #graphic-interior-design {
+        height: 580px;
+    }
+    #graphic-interior-design p {
+        text-align: justify;
+    }
+    #graphic-interior-design article {
+        width: 55vw;
+    }
+    #graphic-interior-design article .circle-banner {
+        width: 160px;
+        height: 160px;
+    }
+    #graphic-interior-design article .rectangle-banner {
+        position: absolute;
+        top: 330px;
+        right: 20px;
+        width: 411px;
+        height: 120px;
+    }
+
+    #digital-area {
+        height: 780px;
+    }
+    .digital-area_banner {
+        height: 450px;
+    }
+
+    .contact_message h3 {
+        margin-top: 0px;
+        margin-left: 70px;
+        font-size: 3rem;
+        line-height: 50px;
+    }
+    .contact_message h3 b {
+        font-size: 6rem;
+    }
+    .contact_message p {
+        margin-left: 70px;
+        font-size: 1.8rem;
+    }
+    .contact_message_social-media {
+        margin-left: 65px;
+    }
+    .contact_form > button {
+        width: 150px;
+        height: 45px;
+        font-size: 2.5rem;
+    }
+}
+@media (max-width:768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        height: 120px;
+    }
+    header .logo {
+        width: auto;
+    }
+    header nav {
+        transition: 500ms;
+        position: fixed;
+        z-index: 2;
+        right: 0px;
+        width: 0px;
+        height: 100vh;
+    }
+    header nav ul {
+        flex-direction: column;
+        background-color: #000;
+    }
+    header nav ul li {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    header nav ul li a {
+        transition: 500ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 0px;
+    }
+    header .flag {
+        position: absolute;
+        left: 0px;
+        width: auto;
+    }
+    header .flag img {
+        margin-top: 30px;
+        margin-left: 45px;
+        margin-right: 0px;
+        width: 50px;
+    }
+
+    .responsive-menu {
+        transition: 500ms;
+        position: fixed;
+        z-index: 3;
+        top: 37.5px;
+        right: 37.5px;
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+        border: #e0e0e0 3px solid;
+    }
+    .responsive-menu_bars,
+    .responsive-menu_bars::before,
+    .responsive-menu_bars::after {
+        position: absolute;
+        top: 19.5px;
+        left: 4.5px;
+        width: 30px;
+        height: 3px;
+        background-color: #e0e0e0;
+        border-radius: 2px;
+        content: '';
+        transition: 500ms;
+    }
+    .responsive-menu_bars::before {
+        top: 8px;
+        left: 0px;
+    }
+    .responsive-menu_bars::after {
+        top: -8px;
+        left: 0px;
+    }
+    .cross {
+        transform: rotateZ(45deg);
+        transition: 500ms;
+    }
+    .cross::before {
+        top: 0px;
+        transform: rotateZ(90deg);
+    }
+    .cross::after {
+        top: 0px;
+    }
+
+    .displayed-responsive-menu {
+        transition: 500ms;
+        right: 220px;
+    }
+    .displayed-nav-menu {
+        transition: 500ms;
+        width: 200px;
+    }
+    .displayed-nav-anchor {
+        transition: 500ms;
+        font-size: 1.8rem;
+    }
 }
