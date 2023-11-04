@@ -423,7 +423,7 @@ header .flag img {
 }
 .digital-area_title > figure {
     margin-right: 15px;
-    width: 1000px;
+    width: calc((100vw - 391px) * 0.8);
     height: 1px;
     background-color: #303030;
 }
@@ -874,5 +874,153 @@ footer {
     .displayed-nav-anchor {
         transition: 500ms;
         font-size: 1.8rem;
+    }
+
+    #banner article img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #services {
+        height: 500px;
+    }
+    #services > h2 {
+        top: 70px;
+        left: 45px;
+        font-size: 3.8rem;
+    }
+    #services > span {
+        top: 8px;
+        left: 8px;
+        font-size: 12.3rem;
+        -webkit-text-stroke: 1px var(--font-color);
+    }
+    #services > article {
+        height: 180px;
+    }
+    #services > article > ul > li {
+        font-size: 1.5rem;
+    }
+
+    #work-methodology {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .work-methodology_title {
+        height: 255px;
+    }
+    .work-methodology_diagram {
+        flex-direction: row;
+        height: 200px;
+    }
+    .work-methodology_diagram figure {
+        width: 40px;
+    }
+    .work-methodology_diagram > div > article {
+        width: 65px;
+    }
+    .work-methodology_diagram > div > article > img {
+        width: 65px;
+    }
+    .work-methodology_diagram > div > article > p {
+        font-size: 1rem;
+    }
+
+    #print-section {
+        height: 800px;
+    }
+    #print-section h2 {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .print-section_imgs > img {
+        width: 360px;
+        height: 360px;
+    }
+    .print-section_img-1 {
+        left: 0px;
+    }
+    .print-section_img-2 {
+        top: 125px;
+        left: 270px;
+    }
+    .print-section_figure-1 {
+        top: 75px;
+        left: -5px;
+        width: 160px;
+    }
+    .print-section_figure-2 {
+        top: 400px;
+        left: 475px;
+        width: 160px;
+    }
+    .print-section_lists_list-1 {
+        left: 350px;
+    }
+    .print-section_lists_figure-1 {
+        left: 300px;
+    }
+    .print-section_lists_list-2 {
+        top: 490px;
+        left: 60px;
+    }
+    .print-section_lists_figure-2 {
+        top: 550px;
+        left: 20px;
+    }
+
+    .maketing-and-design_imgs img {
+        width: 230px;
+        height: 230px;
+    }
+    .maketing-and-design_imgs_banner{
+        width: 230px;
+        height: 230px;
+    }
+    .maketing-and-design_imgs_banner h3 {
+        font-size: 1.6rem;
+        letter-spacing: 5px;
+    }
+
+    #graphic-interior-design {
+        height: 620px;
+    }
+    #graphic-interior-design article {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        height: 600px;
+        width: 43.75vw;
+    }
+    #graphic-interior-design article .rectangle-banner {
+        position: static;
+        width: 80%;
+        height: auto;
+    }
+    #graphic-interior-design article .circle-banner {
+        width: 140px;
+        height: 140px;
+    }
+    .circle-banner-1 {
+        margin-left: 80px;
+    }
+    .circle-banner-2 {
+        margin-right: 80px;
+    }
+    .circle-banner-3 {
+        margin-left: 80px;
+    }
+
+    #digital-area {
+        height: 620px;
+    }
+    .digital-area_banner {
+        height: 350px;
+    }
+    .digital-area_icon {
+        width: 130px;
+    }
+    .digital-area_icon > span {
+        font-size: 1.2rem;
     }
 }
