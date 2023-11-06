@@ -122,7 +122,6 @@ header .flag img {
 #who-we-are .photos article {
     width: 140px;
     height: 230px;
-
 }
 #who-we-are .photos article img {
     width: 135px;
@@ -487,6 +486,9 @@ header .flag img {
     height: 210px;
     background-color: #303030;
 }
+#see-more {
+    display: none;
+}
 
 #clients h2 {
     margin-left: 70px;
@@ -506,6 +508,9 @@ header .flag img {
     font-size: 4rem;
     color: #222221;
 }
+.contact_message {
+    width: 37.5vw;
+}
 .contact_main {
     display: flex;
     color: #222221;
@@ -522,9 +527,6 @@ header .flag img {
     margin-left: 25px;
     font-weight: 500;
     font-size: 8.5rem;
-}
-.contact_message {
-    width: 37.5vw;
 }
 .contact_message p {
     margin-left: 110px;
@@ -1023,4 +1025,346 @@ footer {
     .digital-area_icon > span {
         font-size: 1.2rem;
     }
+
+    .contact_main {
+        flex-direction: column;
+    }
+    .contact_message {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .contact_message h3 {
+        margin: 0px;
+        margin-bottom: 40px;
+    }
+    .contact_message p {
+        width: 80%;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .contact_message_social-media {
+        align-self: center;
+        margin: 0px;
+    }
+
+    .contact_form {
+        width: 100%;
+        height: 400px;
+    }
 }
+@media (max-width: 425px) {
+    header .logo {
+        width: 50%;
+    }
+    header .logo img {
+        width: 100%;
+    }
+    header .flag {
+        top: 40px;
+        left: 30px;
+    }
+    header .flag img {
+        margin: 0px;
+    }
+    .responsive-menu {
+        right: 20px;
+    }
+    .displayed-responsive-menu {
+        transition: 500ms;
+        background-color: #000;
+        right: 200px;
+    }
+
+    #banner {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: baseline;
+        height: 600px;
+    }
+    #banner article {
+        flex-direction: row;
+        margin-left: 30px;
+        width: auto;
+        height: auto;
+    }
+    #banner article img {
+        width: 80px;
+        height: 80px;
+    }
+    #banner article p {
+        margin-left: 15px;
+        font-size: 1.8rem;
+    }
+
+    #who-we-are {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+    #who-we-are .description {
+        width: 85%;
+    }
+    #who-we-are .description h2 {
+        margin-left: 0px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    #who-we-are .description p {
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+    #who-we-are .photos {
+        width: 100%;
+    }
+    #who-we-are .photos article {
+        margin-bottom: 30px;
+        width: auto;
+        height: auto;
+    }
+    #who-we-are .photos article img {
+        width: 270px;
+        height: 330px;
+    }
+    #who-we-are .photos article p {
+        font-size: 3rem;
+    }
+    #who-we-are .photos article span {
+        font-size: 1.5rem;
+    }
+
+    #services {
+        height: 650px;
+    }
+    #services > h2 {
+        top: 52px;
+        left: 35px;
+        font-size: 3rem;
+    }
+    #services > span {
+        top: 27px;
+        left: 20px;
+        font-size: 6rem;
+    }
+    #services > article {
+        flex-direction: column;
+        justify-content: center;
+        /* flex-wrap: wrap; */
+        height: auto;
+    }
+    #services > article > ul {
+        width: 200px;
+        margin: 15px 0px 15px 0px;
+    }
+    #services > article > ul > li {
+        font-size: 1.5rem;
+    }
+
+    #work-methodology {
+        height: auto;
+    }
+    .work-methodology_title {
+        width: 100%;
+    }
+    .work-methodology_diagram {
+        flex-direction: column;
+        height: auto;
+    }
+    .work-methodology_diagram_section-1  {
+        margin-left: 30px;
+        width: 175px;
+    }
+    .work-methodology_diagram_section-2 {
+        width: 100%;
+    }
+    .work-methodology_diagram > div > article {
+        width: 70px;
+    }
+    .work-methodology_diagram > div > article > img {
+        width: 50px;
+    }
+    .work-methodology_diagram figure {
+        width: 25px;
+    }
+    .second-pharagraph {
+        position: relative;
+        width: 145px;
+    }
+
+    #print-section {
+        margin-top: 60px;
+        height: 950px;
+        overflow: hidden;
+    }
+    .print-section_imgs > img {
+        width: 275px;
+        height: 275px;
+    }
+    .print-section_img-2 {
+        top: 200px;
+        left: 110px;
+    }
+    .print-section_figure-1 {
+        top: 45px;
+        left: -11px;
+    }
+    .print-section_figure-2 {
+        top: 418px;
+        left: 233px;
+    }
+    .print-section_lists_list-1 {
+        top: 130px;
+        left: 230px;
+    }
+    .print-section_lists_list-2 {
+        top: 670px;
+    }
+    .print-section_lists_figure-1 {
+        left: 200px;
+        top: 125px;
+    }
+    .print-section_lists_figure-2 {
+        top: 710px;
+    }
+
+    #maketing-and-design h2 {
+        margin-left: 25px;
+        margin-bottom: 50px;
+        /* text-align: center; */
+    }
+    #maketing-and-design {
+        height: auto;
+    }
+    .maketing-and-design_imgs {
+        flex-direction: column;
+        align-items: center;
+        height: 750px;
+        margin: 0px;
+    }
+    .maketing-and-design_lists {
+        flex-direction: column;
+        align-items: center;
+    }
+    .maketing-and-design_lists ul {
+        margin: 0px;
+        margin-bottom: 50px;
+        width: 255px;
+    }
+
+    #graphic-interior-design {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    #graphic-interior-design article {
+        position: relative;
+    }
+    #graphic-interior-design h2 {
+        margin-left: 0px;
+    }
+    #graphic-interior-design h3 {
+        margin-left: 0px;
+    }
+    #graphic-interior-design p {
+        margin-left: 0px;
+        margin-bottom: 50px;
+        width: 85%;
+    }
+    #graphic-interior-design article {
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+    }
+    #graphic-interior-design article .circle-banner {
+        width: 40vw;
+        height: 40vw;
+        margin-left: 0px; 
+        margin-right: 0px;
+        /* margin-bottom: 20px; */
+
+    }
+    #graphic-interior-design article .rectangle-banner {
+        margin-top: 25px;
+        margin-bottom: 100px;
+    }
+    
+    #digital-area {
+        position: relative;
+        height: auto;
+    }
+    .digital-area_banner {
+        height: 200px;
+    }
+    .digital-area_icons {
+        top: 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .digital-area_icon {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 260px;
+    }
+    .digital-area_icon > img {
+        margin-bottom: 20px;
+    }
+    .digital-area_icon > span {
+        text-align: right;
+    }
+
+    .success-stories_photos {
+        transition: 1200ms;
+        overflow: hidden;
+        height: 690px;
+    }
+
+    #success-stories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #see-more {
+        display: block;
+        margin-top: 35px;
+        width: 150px;
+        height: 50px;
+        background-color: transparent;
+        border: #000 solid 1px;
+        font-size: 2.2rem;
+    }
+    .deploy-gallery {
+        transition: 1200ms;
+        height: 4600px;
+    }
+
+    #clients h2 {
+        margin-left: 30px;
+        font-size: 3rem;
+    }
+
+    .contact_form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .contact_form article {
+        margin-bottom: 30px;
+        width: 80%;
+    }
+    .contact_leyend {
+        flex-direction: column;
+    }
+    .contact_leyend > p {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+    }
+    .contact_leyend > p > img {
+        margin-right: 5px;
+        width: 30px;
+    }
+}    
