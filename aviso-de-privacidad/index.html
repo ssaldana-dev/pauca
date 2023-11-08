@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Aviso de privacidad</title>
         <link rel="stylesheet" href="./styles-aviso.css" />
+        <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
         <header>
@@ -13,18 +14,21 @@
                     <img src="../assets/logo-pauca.png" alt="Paúca logo" />
                 </a>
             </article>
-            <nav>
+            <nav id="navigation-menu">
                 <ul>
-                    <li><a href="../#who-we-are">¿Quienes somos?</a></li>
-                    <li><a href="../#services">Servicios</a></li>
-                    <li><a href="../#success-stories">Casos de Éxito</a></li>
-                    <li><a href="../#clients">Clientes</a></li>
-                    <li><a href="../#contact">Contacto</a></li>
+                    <li><a class="navigation-menu_anchor" href="../#who-we-are">¿Quienes somos?</a></li>
+                    <li><a class="navigation-menu_anchor" href="../#services">Servicios</a></li>
+                    <li><a class="navigation-menu_anchor" href="../#success-stories">Casos de Éxito</a></li>
+                    <li><a class="navigation-menu_anchor" href="../#clients">Clientes</a></li>
+                    <li><a class="navigation-menu_anchor" href="../#contact">Contacto</a></li>
                 </ul>
             </nav>
             <article class="flag">
                 <img src="../assets/flag.png" alt="" />
             </article>
+            <div class="responsive-menu">
+                <figure class="responsive-menu_bars"></figure>
+            </div>
         </header>
         <main>
             <section class="text">
@@ -611,6 +615,7 @@
                     &Uacute;ltima modificaci&oacute;n: 04 de Septiembre de 2023
                 </p>
             </section>
+            <script src="./nav-code.js"></script>
         </main>
     </body>
 </html>
